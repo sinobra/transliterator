@@ -1,8 +1,8 @@
 # Transliterator
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This application transliterates text containing 2-character combinations that represent German and Portuguese vowels not found on US keyboards.
 
+For example if you write pa;o, in the upper text field, it will be transliterated as pão in the lower text field.
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
