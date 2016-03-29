@@ -1,0 +1,32 @@
+<div class="tframe">
+    <p>This application transliterates text containing 2-character
+        combinations that represent German and Portuguese vowels not found on
+        US keyboards.</p>
+    <p>For example if you write <u><i>pa;o</i></u>, in the upper text field,
+        it will be transliterated as <u><i>pão</i></u> in the lower text field,
+    </p>
+
+    <table>
+        <tr>
+            <td>
+                <button  {{action 'transliterate' }}> Transliterate</button>
+            </td>
+            <td>
+                <button {{ action 'clear'}}>Clear</button>
+            </td>
+            <td>
+              {{#help-dialog enabled=false }}{{/help-dialog}}
+            </td>
+        </tr>
+    </table>
+
+    <p>
+        Input<br>
+      {{textarea rows=10 cols=80 value=raw_text key-up=(action 'transliterate')}}
+    </p>
+    <p>
+        Output<br/>
+      {{textarea rows=10 cols=80 value=cooked_text}}
+    </p>
+
+</div>

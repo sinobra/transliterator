@@ -1,0 +1,84 @@
+<button {{action 'toggleHelp'}}>Help</button>
+
+{{#if enabled}}
+    <div class="modal-background">
+        <div class="modal-frame">
+            <div class="modal-title">Mappings of di-graphs to accented characters</div>
+            <div class="modal-body">
+                <div id="help" >
+                    <table border="1" cellspacing="0" cellpadding="5">
+                        <tbody>
+                        <tr align="left" valign="top">
+                            <td align="left" valign="top">a` -&gt;
+                                &agrave;<br />
+                                a' -&gt; &aacute;<br />
+                                a~ -&gt; &atilde;<br />
+                                a; -&gt; &atilde;<br />
+                                a^ -&gt; &acirc;<br />
+                                a: -&gt; &auml;</td>
+
+                            <td align="left" valign="top">A` -&gt;
+                                &Agrave;<br />
+                                A' -&gt; &Aacute;<br />
+                                A~ -&gt; &Atilde;<br />
+                                A; -&gt; &Atilde;<br />
+                                A^ -&gt; &Acirc;<br />
+                                A: -&gt; &Auml;</td>
+
+                            <td align="left" valign="top">c; -&gt;
+                                &ccedil;<br />
+                                C; -&gt; &Ccedil;</td>
+
+                            <td align="left" valign="top">e` -&gt;
+                                &egrave;<br />
+                                e' -&gt; &eacute;<br />
+                                e^ -&gt; &ecirc;</td>
+
+                            <td align="left" valign="top">E` -&gt;
+                                &Egrave;<br />
+                                E' -&gt; &Eacute;<br />
+                                E^ -&gt; &Ecirc;</td>
+                        </tr>
+
+                        <tr align="left" valign="top">
+                            <td>i' -&gt; &iacute;<br />
+                                I' -&gt; &Iacute;<br />
+                                <br />
+                                ss: -&gt; &szlig;<br />
+                                SS: -&gt; &szlig;</td>
+
+                            <td>o` -&gt; &ograve;<br />
+                                o' -&gt; &oacute;<br />
+                                o^ -&gt; &ocirc;<br />
+                                o: -&gt; &ouml;<br />
+                                o~ -&gt; &otilde;<br />
+                                o; -&gt; &otilde;</td>
+
+                            <td>O` -&gt; &Ograve;<br />
+                                O' -&gt; &Oacute;<br />
+                                O^ -&gt; &Ocirc;<br />
+                                O: -&gt; &Ouml;<br />
+                                O~ -&gt; &Otilde;<br />
+                                O; -&gt; &Otilde;</td>
+
+                            <td>u` -&gt; &ugrave;<br />
+                                u' -&gt; &uacute;<br />
+                                u: -&gt; &uuml;<br />
+                                u^ -&gt; &ucirc;<br />
+                                u; -&gt; &uuml;</td>
+
+                            <td>U` -&gt; &Ugrave;<br />
+                                U' -&gt; &Uacute;<br />
+                                U: -&gt; &Uuml;<br />
+                                U^ -&gt; &Ucirc;</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        <button {{action 'toggleHelp'}}>Dismiss</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/if}}
